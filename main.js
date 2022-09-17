@@ -3,6 +3,8 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const finalScore = document.getElementById('final-score')
+ const blockchain = document.getElementById('blockchain')
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -13,6 +15,8 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
+  finalScore.classList.add('hide')
+  blockchain.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
@@ -73,6 +77,7 @@ async function selectAnswer(e) {
   } else {
     startButton.innerText = 'Restart'
     startButton.classList.remove('hide')
+    finalScore.classList.remove('hide')
   }
 }
 
@@ -108,11 +113,11 @@ const questions = [
     ]
   },
   {
-    question: 'What is web3',
+    question: 'What is Crypto used for?',
     answers: [
-      { text: 'Blockchain' },
-      { text: 'A way for web3 apps to interact with an EVM Blockchain' },
-      { text: 'Um no'},
+      { text: 'Transfer of wealth' },
+      { text: 'Hacking' },
+      { text: 'Google Search'},
       { text: 'IDK'}
     ]
   }

@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="/style.css" rel="stylesheet">
-  <script defer src="/main.js"></script>
-  <title>Quiz App</title>
-</head>
-<body>
-  <div class="container">
-    <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="/style.css" rel="stylesheet">
+      <script defer src="/main.js"></script>
+      <title>Quiz App</title>
+   </head>
+   <body>
+      <div class="container">
+         <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+               <button class="btn">Answer 1</button>
+               <button class="btn">Answer 2</button>
+               <button class="btn">Answer 3</button>
+               <button class="btn">Answer 4</button>
+            </div>
+         </div>
+         <div id="blockchain">
+            <h2>How are cryptos different from blockchain?</h2>
+            <p>Cryptocurrencies are much different from blockchain. Decentralized digital currencies like Bitcoin and Ethereum run on blockchain technology. Blockchains are basically designed to use cryptos to write transactions on the network.
+            </p>
+            <h2>What is a crypto wallet?</h2>
+            <p>Crypto wallets are accounts where investors can store their cryptocurrencies more securely than exchanges. Investors and traders can hold their wallets through an exchange wallet, custody wallet, or outside the exchange. There are different types of wallets like hot, cold, and hybrid, which crypto novices and experts chose according to their own preference.
+            </p>
+            <h2>What is cryptocurrency? </h2>
+            <p>
+               Cryptocurrency is a completely digital, decentralized form of currency. It can be used as a means of payment or as a potential store of value. Since it’s a digital currency, you can’t carry Bitcoins around physically in bill or coin form; all transactions take place online. Cryptocurrency is also decentralized, meaning it’s not backed by government authority the way the U.S. dollar, for example, is. Instead, it’s maintained by its users.
+               When you buy, sell, or trade crypto, those transactions are recorded on a decentralized ledger called blockchain, which is a permanent, unchangeable record. Any changes to a blockchain must be approved by a majority of users, which also makes it a highly secure form of record keeping.
+               There are many different kinds of crypto, but the most popular (and largest by market cap) are Bitcoin, Ethereum and Solana. 
+            </p>
+            <h2>What is the purpose of cryptocurrency?</h2>
+            <p>
+               The original intention behind Bitcoin, the first cryptocurrency, was to create an electronic cash system people could use in daily transactions. You technically can buy and sell things with it, but Bitcoin’s price fluctuates quickly, which makes it a poor fit for spending instead of cash. You could spend $50 worth of Bitcoin on something today that ends up being worth $20 tomorrow. 
+            </p>
+         </div>
+         <div id="final-score" class="hide">
+            <div class="result">
+               <p>Final Score Comming Soon</p>
+            </div>
+            <div class="score">
+               <p>300000000</p>
+            </div>
+         </div>
+         <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+         </div>
       </div>
-    </div>
-    <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
-  </div>
-</body>
+   </body>
 </html>
