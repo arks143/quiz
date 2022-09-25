@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="/style.css" rel="stylesheet">
+      <script defer src="/main.js"></script>
+      <title>Quiz App</title>
+   </head>
+   <body>
+      <div class="container">
+         <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+               <button class="btn">Answer 1</button>
+               <button class="btn">Answer 2</button>
+               <button class="btn">Answer 3</button>
+               <button class="btn">Answer 4</button>
+            </div>
+         </div>
+         <div id="blockchain">
+            <h2>What is Crypto currency ?</h2>
+            <p>Crypto currency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority.
+            </p>
+            <h2>Who Invented Bitcoin ?</h2>
+            <p>Satoshi Nakamoto is the name used by the presumed pseudonymous person or persons who developed bitcoin.
+             Nakamoto stated that work on the writing of the code for bitcoin began in 2007. On 18 August 2008, he or a colleague registered the domain name bitcoin.org
+            </p>
+            <h2>How does a block chain work? </h2>
+            <p>
+              Think of the block chain as a distributed database where each database has a copy of every transaction. This means that the data is always correct as you have many more copies to verify against.
+            </p>
+            <h2>What is the purpose of cryptocurrency?</h2>
+            <p>
+               The original intention behind Bitcoin, the first cryptocurrency, was to create an electronic cash system people could use in daily transactions. You technically can buy and sell things with it, but Bitcoin’s price fluctuates quickly, which makes it a poor fit for spending instead of cash. You could spend $50 worth of Bitcoin on something today that ends up being worth $20 tomorrow. 
+            </p>
+               <h2>What is the diffrence between a token and a coin</h2>
+            <p>
+              The coin is usaly the Crypto that the tranaction pays transaction fees in. A token is an asset that is on the blockchain but is not used for governance.
+            </p>
+         </div>
+         <div id="final-score" class="hide">
+            <div class="result">
+               <p>Final Score</p>
+            </div>
+            <div class="score">
+               <p></p>
+            </div>
+         </div>
+         <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+         </div>
+      </div>
+   </body>
+</html>
